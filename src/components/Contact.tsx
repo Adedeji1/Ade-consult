@@ -24,7 +24,7 @@ function Contact() {
               Let's Build Your Website
             </h2>
             <p style={{ color: "#64748B", fontSize: 16, marginTop: 16, maxWidth: 460, margin: "16px auto 0" }}>
-              Tell us about your project and we'll get back to you within 24 hours.
+              Tell us about your project and we'll get back to you within 48 hours.
             </p>
           </div>
         </FadeUp>
@@ -36,9 +36,9 @@ function Contact() {
               <div style={{ marginBottom: 40 }}>
                 <h3 style={{ fontSize: 20, fontWeight: 700, color: "#0A1628", marginBottom: 16 }}>Reach Us Directly</h3>
                 {[
-                  { icon: MessageCircle, label: "WhatsApp", value: "+234 800 000 0000", color: "#22C55E" },
-                  { icon: Mail, label: "Email", value: "hello@adeconsults.ng", color: "#2563EB" },
-                  { icon: Clock, label: "Response Time", value: "Within 24 hours", color: "#F59E0B" },
+                  { icon: MessageCircle, label: "WhatsApp", value: "+234 810 691 8387", color: "#22C55E" },
+                  { icon: Mail, label: "Email", value: "afolabiadedeji351@gmail.com", color: "#2563EB" },
+                  { icon: Clock, label: "Response Time", value: "Within 48 hours", color: "#F59E0B" },
                   { icon: MapPin, label: "Based in", value: "Lagos, Nigeria", color: "#EF4444" },
                 ].map(c => {
                   const Icon = c.icon;
@@ -72,7 +72,7 @@ function Contact() {
                 <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 16 }}>
                   Not sure what you need? We offer a free 30-minute call to help you decide the best approach.
                 </p>
-                <a href="https://wa.me/2348000000000" style={{
+                <a href="https://wa.me/2348106918387" style={{
                   display: "inline-flex", alignItems: "center", gap: 6,
                   background: "rgba(255,255,255,0.15)", color: "white",
                   padding: "8px 16px", borderRadius: 10, fontSize: 13, fontWeight: 600,

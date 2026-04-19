@@ -25,7 +25,7 @@ function Hero({ scrollTo }: HeroProps) {
       }} />
       {/* Gradient orbs */}
       <div style={{
-        position: "absolute", top: "10%", right: "5%", width: 600, height: 600,
+        position: "absolute", top: "10%", right: "5%",  height: 600,
         borderRadius: "50%", zIndex: 0, pointerEvents: "none",
         background: "radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%)"
       }} />
@@ -38,13 +38,13 @@ function Hero({ scrollTo }: HeroProps) {
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px", position: "relative", zIndex: 1, width: "100%" }}>
         <div className="ac-hero-grid">
           {/* Left */}
-          <div style={{ maxWidth: 580 }}>
+          <div>
             <div style={{
               opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(20px)",
               transition: "opacity 0.8s ease, transform 0.8s ease"
             }}>
               <div style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
+                display: "inline-flex", alignItems: "center", gap: 8, 
                 background: "linear-gradient(135deg, rgba(37,99,235,0.1), rgba(37,99,235,0.05))",
                 border: "1px solid rgba(37,99,235,0.2)",
                 padding: "6px 14px", borderRadius: 100, marginBottom: 28
@@ -82,7 +82,7 @@ function Hero({ scrollTo }: HeroProps) {
             }}>
               <p style={{
                 fontSize: "clamp(15px, 2vw, 17px)", color: "#64748B", lineHeight: 1.75,
-                marginBottom: 40, maxWidth: 480
+                marginBottom: 40,
               }}>
                 We build fast, modern, and conversion-focused websites that help your business attract more customers and look credible online.
               </p>
@@ -91,7 +91,7 @@ function Hero({ scrollTo }: HeroProps) {
             <div style={{
               opacity: loaded ? 1 : 0, transform: loaded ? "none" : "translateY(24px)",
               transition: "opacity 0.8s ease 300ms, transform 0.8s ease 300ms",
-              display: "flex", gap: 14, flexWrap: "wrap"
+              display: "flex", alignItems: "center", justifyContent: "center", gap: 14, flexWrap: "wrap", 
             }}>
               <button onClick={() => scrollTo("contact")} style={{
                 background: "linear-gradient(135deg, #0A1628, #1B3B6F)",
@@ -119,11 +119,11 @@ function Hero({ scrollTo }: HeroProps) {
 
             {/* Stats */}
             <div style={{
-              display: "flex", gap: 32, marginTop: 48,
+              display: "flex", alignItems: "center", justifyContent: "center", gap: 32, marginTop: 48,
               opacity: loaded ? 1 : 0,
               transition: "opacity 0.8s ease 500ms"
             }}>
-              {[{ val: "50+", label: "Projects Delivered" }, { val: "98%", label: "Client Satisfaction" }, { val: "3 Days", label: "Avg. Response Time" }].map(s => (
+              {[{ val: "10+", label: "Projects Delivered" }, { val: "98%", label: "Client Satisfaction" }, { val: "3 Days", label: "Avg. Response Time" }].map(s => (
                 <div key={s.label}>
                   <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 28, fontWeight: 700, color: "#0A1628" }}>{s.val}</div>
                   <div style={{ fontSize: 12, color: "#94A3B8", fontWeight: 500, marginTop: 2 }}>{s.label}</div>
