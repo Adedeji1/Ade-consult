@@ -68,8 +68,8 @@ function Footer({ scrollTo }: FooterProps) {
           <div>
             <div style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 20 }}>Contact</div>
             {[
-              { icon: MessageCircle, text: "+234 800 000 0000" },
-              { icon: Mail, text: "hello@adeconsults.ng" },
+              { icon: MessageCircle, text: "+234 810 691 8387" },
+              { icon: Mail, text: "afolabiadedeji351@gmail.com" },
               { icon: MapPin, text: "Lagos, Nigeria" },
               { icon: Clock, text: "Mon–Fri, 9am – 6pm" },
             ].map(c => {
