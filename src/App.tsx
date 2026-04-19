@@ -40,7 +40,6 @@ export default function AdeConsults() {
   return (
     <div style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#FAFBFE", color: "#0A1628" }}>
       <Navbar
-        scrolled={scrolled}
         scrollTo={scrollTo}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
