@@ -3,7 +3,11 @@ import { Star, ArrowRight, ChevronRight } from "lucide-react";
 import FadeUp from "./FadeUp";
 import BrowserMockup from "./BrowserMockup";
 
-function Hero({ scrollTo }) {
+interface HeroProps {
+  scrollTo: (id: string) => void;
+}
+
+function Hero({ scrollTo }: HeroProps) {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => { setTimeout(() => setLoaded(true), 100); }, []);
 

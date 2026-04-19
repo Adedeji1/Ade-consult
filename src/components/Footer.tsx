@@ -1,7 +1,11 @@
-import { Twitter, Instagram, Linkedin, Facebook, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
+import { AtSign, Globe, Link, Share2, MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import LogoMark from "./LogoMark";
 
-function Footer({ scrollTo }) {
+type FooterProps = {
+  scrollTo: (section: string) => void;
+};
+
+function Footer({ scrollTo }: FooterProps) {
   return (
     <footer style={{ background: "#0A1628", color: "white", padding: "72px 24px 32px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -19,7 +23,7 @@ function Footer({ scrollTo }) {
               We help small and medium-sized businesses grow online with professional, conversion-focused websites.
             </p>
             <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
-              {[Twitter, Instagram, Linkedin, Facebook].map((Icon, i) => (
+              {[Globe, Share2, Link, AtSign].map((Icon, i) => (
                 <button key={i} style={{
                   width: 38, height: 38, borderRadius: 10, background: "rgba(255,255,255,0.08)",
                   border: "1px solid rgba(255,255,255,0.12)", cursor: "pointer",

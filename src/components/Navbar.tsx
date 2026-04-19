@@ -1,7 +1,16 @@
+import type { Dispatch, SetStateAction } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import LogoMark from "./LogoMark";
 
-function Navbar({ scrolled, scrollTo, menuOpen, setMenuOpen, activeSection }) {
+interface NavbarProps {
+  scrolled: boolean;
+  scrollTo: (id: string) => void;
+  menuOpen: boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
+  activeSection: string;
+}
+
+function Navbar({ scrolled, scrollTo, menuOpen, setMenuOpen, activeSection }: NavbarProps) {
   const links = ["home", "services", "work", "pricing", "contact"];
   return (
     <nav style={{

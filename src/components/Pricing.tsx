@@ -1,7 +1,11 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import FadeUp from "./FadeUp";
 
-function Pricing({ scrollTo }) {
+interface PricingProps {
+  scrollTo: (id: string) => void;
+}
+
+function Pricing({ scrollTo }: PricingProps) {
   const plans = [
     {
       name: "Starter",
@@ -90,7 +94,7 @@ function Pricing({ scrollTo }) {
                   onClick={() => scrollTo("contact")}
                   style={{
                     width: "100%", padding: "13px", borderRadius: 14, fontSize: 14, fontWeight: 700,
-                    cursor: "pointer", border: "none", transition: "all 0.3s ease",
+                    cursor: "pointer", transition: "all 0.3s ease",
                     background: plan.featured ? "white" : "transparent",
                     color: plan.featured ? "#0A1628" : "#0A1628",
                     border: plan.featured ? "none" : "2px solid #0A1628"
