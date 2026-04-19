@@ -260,3 +260,21 @@ code {
     @apply bg-background text-foreground;}
   html {
     @apply font-sans;}}
+
+.ac-desktop-nav {
+  display: flex;
+}
+
+.ac-hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ac-desktop-nav {
+    display: none;
+  }
+
+  .ac-hamburger {
+    display: block;
+  }
+}
